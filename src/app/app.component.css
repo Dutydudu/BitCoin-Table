@@ -1,0 +1,34 @@
+p {
+  font-family: Lato;
+}
+
+h1 {
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 3px solid;
+  padding: 10px;
+  color: rgb(44, 40, 8);
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+header {
+  border: 2px solid;
+}
+
+header p {
+  text-align: center;
+  font-size: 18px;
+}

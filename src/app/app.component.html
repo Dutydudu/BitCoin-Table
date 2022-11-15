@@ -1,0 +1,30 @@
+<div>
+  <h1>TP - Angular</h1>
+  <header>
+    <p><b>Nome:</b> {{ name }} {{ lastname }}</p>
+    <p><b>RA:</b> {{ ra }}</p>
+  </header>
+</div>
+<br />
+<div>
+  <div>
+    <h2><b>BitCoin</b></h2>
+
+    <table>
+      <tr>
+        <th>Data - Hora</th>
+        <th>Dolar - USD</th>
+        <th>Real - BRL</th>
+      </tr>
+      <tr *ngFor="let resp of BitcoinService.updateList">
+        <td>{{ resp.time.updated }}</td>
+        <td>
+          {{ resp.bpi.USD.rate }}
+        </td>
+        <td>
+          {{ resp.bpi.BRL.rate }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
